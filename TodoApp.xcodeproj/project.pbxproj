@@ -190,10 +190,37 @@
 			path = TodoAppUITests;
 			sourceTree = "<group>";
 		};
+		E967519629895A46007D567B /* todos */ = {
+			isa = PBXGroup;
+			children = (
+				E9C369DA297FDC3300C2282A /* StatisticsGraphView.swift */,
+				E9C369E229801A7600C2282A /* TodoList.swift */,
+			);
+			path = todos;
+			sourceTree = "<group>";
+		};
+		E967519729895B61007D567B /* timer */ = {
+			isa = PBXGroup;
+			children = (
+				E947E59D2988064200BAC9BC /* TodoTimerView.swift */,
+				E967519429892ADF007D567B /* SetTodoTimerModal.swift */,
+			);
+			path = timer;
+			sourceTree = "<group>";
+		};
+		E967519829895B72007D567B /* todos */ = {
+			isa = PBXGroup;
+			children = (
+				E9C7BE2F297EA7FC00C48C8B /* TodoItem.swift */,
+			);
+			path = todos;
+			sourceTree = "<group>";
+		};
 		E97155AC29829AB100BC1718 /* common */ = {
 			isa = PBXGroup;
 			children = (
 				E926A147297AEFDF00C16BA8 /* CircleImage.swift */,
+				E9C7BE33297EE53A00C48C8B /* CheckButton.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -248,14 +275,12 @@
 		E9C7BE21297E862D00C48C8B /* screens */ = {
 			isa = PBXGroup;
 			children = (
+				E967519729895B61007D567B /* timer */,
+				E967519629895A46007D567B /* todos */,
 				E9C369ED29801F7600C2282A /* category */,
 				E9C369EC29801F7200C2282A /* profile */,
 				E9C7BE1F297E857A00C48C8B /* TodoDetailsView.swift */,
 				E9C7BE23297E943800C48C8B /* AddTodoView.swift */,
-				E9C369DA297FDC3300C2282A /* StatisticsGraphView.swift */,
-				E9C369E229801A7600C2282A /* TodoList.swift */,
-				E947E59D2988064200BAC9BC /* TodoTimerView.swift */,
-				E967519429892ADF007D567B /* SetTodoTimerModal.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -263,11 +288,10 @@
 		E9C7BE22297E863D00C48C8B /* components */ = {
 			isa = PBXGroup;
 			children = (
+				E967519829895B72007D567B /* todos */,
 				E97155AC29829AB100BC1718 /* common */,
 				E9C369EE29801F7A00C2282A /* category */,
 				E9C369EB29801F6C00C2282A /* profile */,
-				E9C7BE2F297EA7FC00C48C8B /* TodoItem.swift */,
-				E9C7BE33297EE53A00C48C8B /* CheckButton.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
