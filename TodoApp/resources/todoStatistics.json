@@ -1,0 +1,74 @@
+[
+    {
+        "id": 0,
+        "weekStart": "2022-01-01",
+        "weekEnd": "2022-01-07",
+        "totalTasksCompleted": 135,
+        "dailyTasks": [
+            {
+                "date": "2022-01-01",
+                "tasksCompleted": 20
+            },
+            {
+                "date": "2022-01-02",
+                "tasksCompleted": 15
+            },
+            {
+                "date": "2022-01-03",
+                "tasksCompleted": 25
+            },
+            {
+                "date": "2022-01-04",
+                "tasksCompleted": 18
+            },
+            {
+                "date": "2022-01-05",
+                "tasksCompleted": 22
+            },
+            {
+                "date": "2022-01-06",
+                "tasksCompleted": 15
+            },
+            {
+                "date": "2022-01-07",
+                "tasksCompleted": 30
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "weekStart": "2022-01-08",
+        "weekEnd": "2022-01-14",
+        "totalTasksCompleted": 80,
+        "dailyTasks": [
+            {
+                "date": "2022-01-08",
+                "tasksCompleted": 10
+            },
+            {
+                "date": "2022-01-09",
+                "tasksCompleted": 5
+            },
+            {
+                "date": "2022-01-10",
+                "tasksCompleted": 20
+            },
+            {
+                "date": "2022-01-11",
+                "tasksCompleted": 30
+            },
+            {
+                "date": "2022-01-12",
+                "tasksCompleted": 5
+            },
+            {
+                "date": "2022-01-13",
+                "tasksCompleted": 2
+            },
+            {
+                "date": "2022-01-14",
+                "tasksCompleted": 8
+            }
+        ]
+    }
+]

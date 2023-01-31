@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Do something nice for someone I care about",
+        "description": "It is important that you spend some time with yourself...",
+        "completed": true,
+        "imageName": "0e5",
+        "category": "Personal"
+    },
+    {
+        "id": 2,
+        "name": "Learn German",
+        "description": "It's my goal to learn German so that I can go to Berlin and eat Bratwurst",
+        "completed": false,
+        "imageName": "3h7rsv",
+        "category": "Personal"
+    },
+    {
+        "id": 3,
+        "name": "Water plants",
+        "description": "Don't forget to water the plants otherwise they die",
+        "completed": false,
+        "imageName": "0e5",
+        "category": "Home"
+    },
+    {
+        "id": 4,
+        "name": "Fix broken lamp",
+        "description": "It's very dark now",
+        "completed": true,
+        "imageName": "0e5",
+        "category": "Home"
+    },
+    {
+        "id": 5,
+        "name": "Clean the floors",
+        "description": "The kitchen is very dirty",
+        "completed": false,
+        "imageName": "0e5",
+        "category": "Home"
+    },
+]

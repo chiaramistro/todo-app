@@ -14,6 +14,34 @@
 		E926A12F297AE95E00C16BA8 /* TodoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E926A12E297AE95E00C16BA8 /* TodoAppTests.swift */; };
 		E926A139297AE95E00C16BA8 /* TodoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E926A138297AE95E00C16BA8 /* TodoAppUITests.swift */; };
 		E926A13B297AE95E00C16BA8 /* TodoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E926A13A297AE95E00C16BA8 /* TodoAppUITestsLaunchTests.swift */; };
+		E926A148297AEFDF00C16BA8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E926A147297AEFDF00C16BA8 /* CircleImage.swift */; };
+		E947E59E2988064200BAC9BC /* TodoTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947E59D2988064200BAC9BC /* TodoTimerView.swift */; };
+		E947E5A02988147E00BAC9BC /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947E59F2988147E00BAC9BC /* TrailingIconLabelStyle.swift */; };
+		E947E5A22988228400BAC9BC /* TimerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947E5A12988228400BAC9BC /* TimerData.swift */; };
+		E967519529892ADF007D567B /* SetTodoTimerModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E967519429892ADF007D567B /* SetTodoTimerModal.swift */; };
+		E97155B02982E62900BC1718 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97155AF2982E62900BC1718 /* Color.swift */; };
+		E9C369D2297FD31C00C2282A /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C369D1297FD31C00C2282A /* HexagonParameters.swift */; };
+		E9C369D4297FD45D00C2282A /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C369D3297FD45D00C2282A /* BadgeBackground.swift */; };
+		E9C369D7297FD75800C2282A /* todoStatistics.json in Resources */ = {isa = PBXBuildFile; fileRef = E9C369D6297FD75800C2282A /* todoStatistics.json */; };
+		E9C369D9297FD8CC00C2282A /* TodoStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C369D8297FD8CC00C2282A /* TodoStatistic.swift */; };
+		E9C369DB297FDC3300C2282A /* StatisticsGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C369DA297FDC3300C2282A /* StatisticsGraphView.swift */; };
+		E9C369DD297FF38600C2282A /* CategoryHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C369DC297FF38600C2282A /* CategoryHomeView.swift */; };
+		E9C369DF297FF4C700C2282A /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C369DE297FF4C700C2282A /* CategoryRow.swift */; };
+		E9C369E1297FF56B00C2282A /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C369E0297FF56B00C2282A /* CategoryItem.swift */; };
+		E9C369E329801A7600C2282A /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C369E229801A7600C2282A /* TodoList.swift */; };
+		E9C369E529801C2900C2282A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C369E429801C2900C2282A /* Profile.swift */; };
+		E9C369E829801D9F00C2282A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C369E729801D9F00C2282A /* ProfileView.swift */; };
+		E9C369EA29801EF300C2282A /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C369E929801EF300C2282A /* ProfileSummary.swift */; };
+		E9C369F02980288F00C2282A /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C369EF2980288F00C2282A /* ProfileEditor.swift */; };
+		E9C7BE1E297E828900C48C8B /* SupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7BE1D297E828900C48C8B /* SupportView.swift */; };
+		E9C7BE20297E857A00C48C8B /* TodoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7BE1F297E857A00C48C8B /* TodoDetailsView.swift */; };
+		E9C7BE24297E943800C48C8B /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7BE23297E943800C48C8B /* AddTodoView.swift */; };
+		E9C7BE26297E9EFC00C48C8B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7BE25297E9EFC00C48C8B /* MapView.swift */; };
+		E9C7BE28297EA45A00C48C8B /* todoData.json in Resources */ = {isa = PBXBuildFile; fileRef = E9C7BE27297EA45A00C48C8B /* todoData.json */; };
+		E9C7BE2A297EA61000C48C8B /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7BE29297EA61000C48C8B /* Todo.swift */; };
+		E9C7BE2E297EA79200C48C8B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7BE2D297EA79200C48C8B /* ModelData.swift */; };
+		E9C7BE30297EA7FC00C48C8B /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7BE2F297EA7FC00C48C8B /* TodoItem.swift */; };
+		E9C7BE34297EE53A00C48C8B /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7BE33297EE53A00C48C8B /* CheckButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +73,34 @@
 		E926A134297AE95E00C16BA8 /* TodoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E926A138297AE95E00C16BA8 /* TodoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITests.swift; sourceTree = "<group>"; };
 		E926A13A297AE95E00C16BA8 /* TodoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E926A147297AEFDF00C16BA8 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		E947E59D2988064200BAC9BC /* TodoTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTimerView.swift; sourceTree = "<group>"; };
+		E947E59F2988147E00BAC9BC /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
+		E947E5A12988228400BAC9BC /* TimerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerData.swift; sourceTree = "<group>"; };
+		E967519429892ADF007D567B /* SetTodoTimerModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTodoTimerModal.swift; sourceTree = "<group>"; };
+		E97155AF2982E62900BC1718 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E9C369D1297FD31C00C2282A /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
+		E9C369D3297FD45D00C2282A /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
+		E9C369D6297FD75800C2282A /* todoStatistics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = todoStatistics.json; sourceTree = "<group>"; };
+		E9C369D8297FD8CC00C2282A /* TodoStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStatistic.swift; sourceTree = "<group>"; };
+		E9C369DA297FDC3300C2282A /* StatisticsGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsGraphView.swift; sourceTree = "<group>"; };
+		E9C369DC297FF38600C2282A /* CategoryHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHomeView.swift; sourceTree = "<group>"; };
+		E9C369DE297FF4C700C2282A /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		E9C369E0297FF56B00C2282A /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		E9C369E229801A7600C2282A /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		E9C369E429801C2900C2282A /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		E9C369E729801D9F00C2282A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E9C369E929801EF300C2282A /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
+		E9C369EF2980288F00C2282A /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
+		E9C7BE1D297E828900C48C8B /* SupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportView.swift; sourceTree = "<group>"; };
+		E9C7BE1F297E857A00C48C8B /* TodoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailsView.swift; sourceTree = "<group>"; };
+		E9C7BE23297E943800C48C8B /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
+		E9C7BE25297E9EFC00C48C8B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E9C7BE27297EA45A00C48C8B /* todoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = todoData.json; sourceTree = "<group>"; };
+		E9C7BE29297EA61000C48C8B /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		E9C7BE2D297EA79200C48C8B /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		E9C7BE2F297EA7FC00C48C8B /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		E9C7BE33297EE53A00C48C8B /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +151,13 @@
 		E926A11B297AE95C00C16BA8 /* TodoApp */ = {
 			isa = PBXGroup;
 			children = (
-				E926A11C297AE95C00C16BA8 /* TodoAppApp.swift */,
+				E9C369D5297FD6C700C2282A /* graphics */,
+				E9C7BE2C297EA74100C48C8B /* resources */,
+				E9C7BE2B297EA73500C48C8B /* models */,
+				E9C7BE21297E862D00C48C8B /* screens */,
+				E9C7BE22297E863D00C48C8B /* components */,
 				E926A11E297AE95C00C16BA8 /* ContentView.swift */,
+				E926A11C297AE95C00C16BA8 /* TodoAppApp.swift */,
 				E926A120297AE95D00C16BA8 /* Assets.xcassets */,
 				E926A122297AE95D00C16BA8 /* TodoApp.entitlements */,
 				E926A123297AE95D00C16BA8 /* Preview Content */,
@@ -127,6 +188,109 @@
 				E926A13A297AE95E00C16BA8 /* TodoAppUITestsLaunchTests.swift */,
 			);
 			path = TodoAppUITests;
+			sourceTree = "<group>";
+		};
+		E97155AC29829AB100BC1718 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				E926A147297AEFDF00C16BA8 /* CircleImage.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		E9C369D5297FD6C700C2282A /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				E9C369D3297FD45D00C2282A /* BadgeBackground.swift */,
+				E9C369D1297FD31C00C2282A /* HexagonParameters.swift */,
+				E97155AF2982E62900BC1718 /* Color.swift */,
+				E947E59F2988147E00BAC9BC /* TrailingIconLabelStyle.swift */,
+			);
+			path = graphics;
+			sourceTree = "<group>";
+		};
+		E9C369EB29801F6C00C2282A /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				E9C369E929801EF300C2282A /* ProfileSummary.swift */,
+				E9C369EF2980288F00C2282A /* ProfileEditor.swift */,
+				E9C7BE25297E9EFC00C48C8B /* MapView.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		E9C369EC29801F7200C2282A /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				E9C369E729801D9F00C2282A /* ProfileView.swift */,
+				E9C7BE1D297E828900C48C8B /* SupportView.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		E9C369ED29801F7600C2282A /* category */ = {
+			isa = PBXGroup;
+			children = (
+				E9C369DC297FF38600C2282A /* CategoryHomeView.swift */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		E9C369EE29801F7A00C2282A /* category */ = {
+			isa = PBXGroup;
+			children = (
+				E9C369E0297FF56B00C2282A /* CategoryItem.swift */,
+				E9C369DE297FF4C700C2282A /* CategoryRow.swift */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		E9C7BE21297E862D00C48C8B /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				E9C369ED29801F7600C2282A /* category */,
+				E9C369EC29801F7200C2282A /* profile */,
+				E9C7BE1F297E857A00C48C8B /* TodoDetailsView.swift */,
+				E9C7BE23297E943800C48C8B /* AddTodoView.swift */,
+				E9C369DA297FDC3300C2282A /* StatisticsGraphView.swift */,
+				E9C369E229801A7600C2282A /* TodoList.swift */,
+				E947E59D2988064200BAC9BC /* TodoTimerView.swift */,
+				E967519429892ADF007D567B /* SetTodoTimerModal.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		E9C7BE22297E863D00C48C8B /* components */ = {
+			isa = PBXGroup;
+			children = (
+				E97155AC29829AB100BC1718 /* common */,
+				E9C369EE29801F7A00C2282A /* category */,
+				E9C369EB29801F6C00C2282A /* profile */,
+				E9C7BE2F297EA7FC00C48C8B /* TodoItem.swift */,
+				E9C7BE33297EE53A00C48C8B /* CheckButton.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		E9C7BE2B297EA73500C48C8B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E9C7BE2D297EA79200C48C8B /* ModelData.swift */,
+				E9C7BE29297EA61000C48C8B /* Todo.swift */,
+				E9C369D8297FD8CC00C2282A /* TodoStatistic.swift */,
+				E9C369E429801C2900C2282A /* Profile.swift */,
+				E947E5A12988228400BAC9BC /* TimerData.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		E9C7BE2C297EA74100C48C8B /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				E9C7BE27297EA45A00C48C8B /* todoData.json */,
+				E9C369D6297FD75800C2282A /* todoStatistics.json */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +397,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C369D7297FD75800C2282A /* todoStatistics.json in Resources */,
 				E926A125297AE95D00C16BA8 /* Preview Assets.xcassets in Resources */,
 				E926A121297AE95D00C16BA8 /* Assets.xcassets in Resources */,
+				E9C7BE28297EA45A00C48C8B /* todoData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +425,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C369D2297FD31C00C2282A /* HexagonParameters.swift in Sources */,
+				E9C369E529801C2900C2282A /* Profile.swift in Sources */,
+				E9C7BE26297E9EFC00C48C8B /* MapView.swift in Sources */,
+				E9C7BE1E297E828900C48C8B /* SupportView.swift in Sources */,
+				E9C369DD297FF38600C2282A /* CategoryHomeView.swift in Sources */,
+				E9C369E1297FF56B00C2282A /* CategoryItem.swift in Sources */,
+				E9C7BE2E297EA79200C48C8B /* ModelData.swift in Sources */,
 				E926A11F297AE95C00C16BA8 /* ContentView.swift in Sources */,
+				E947E59E2988064200BAC9BC /* TodoTimerView.swift in Sources */,
+				E9C7BE2A297EA61000C48C8B /* Todo.swift in Sources */,
+				E9C7BE24297E943800C48C8B /* AddTodoView.swift in Sources */,
+				E9C369EA29801EF300C2282A /* ProfileSummary.swift in Sources */,
+				E9C369DF297FF4C700C2282A /* CategoryRow.swift in Sources */,
 				E926A11D297AE95C00C16BA8 /* TodoAppApp.swift in Sources */,
+				E9C369DB297FDC3300C2282A /* StatisticsGraphView.swift in Sources */,
+				E9C369D4297FD45D00C2282A /* BadgeBackground.swift in Sources */,
+				E9C7BE20297E857A00C48C8B /* TodoDetailsView.swift in Sources */,
+				E926A148297AEFDF00C16BA8 /* CircleImage.swift in Sources */,
+				E967519529892ADF007D567B /* SetTodoTimerModal.swift in Sources */,
+				E97155B02982E62900BC1718 /* Color.swift in Sources */,
+				E9C7BE34297EE53A00C48C8B /* CheckButton.swift in Sources */,
+				E9C369D9297FD8CC00C2282A /* TodoStatistic.swift in Sources */,
+				E947E5A02988147E00BAC9BC /* TrailingIconLabelStyle.swift in Sources */,
+				E9C369F02980288F00C2282A /* ProfileEditor.swift in Sources */,
+				E9C7BE30297EA7FC00C48C8B /* TodoItem.swift in Sources */,
+				E9C369E829801D9F00C2282A /* ProfileView.swift in Sources */,
+				E9C369E329801A7600C2282A /* TodoList.swift in Sources */,
+				E947E5A22988228400BAC9BC /* TimerData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
