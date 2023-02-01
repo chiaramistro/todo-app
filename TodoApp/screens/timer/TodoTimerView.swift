@@ -6,11 +6,16 @@
 //
 
 import SwiftUI
+// audiovisual media
+import AVFoundation
 
 struct TodoTimerView: View {
     @State var timerData: TimerData
     
+//     Wrapping a reference type property as a @StateObject keeps the object alive for the life cycle of a view.
     @StateObject var timerManager = TimerManager()
+    
+//    private var player: AVPlayer { AVPlayer.sharedDingPlayer }
     
     var body: some View {
         ZStack {

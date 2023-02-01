@@ -19,6 +19,7 @@ class TimerManager: ObservableObject {
     
         private var lengthInSeconds: Int { lengthInMinutes * 60 }
 
+//     emits property changes to a subscriber.
         @Published var secondsElapsed = 0
         @Published var secondsRemaining = 0
     
