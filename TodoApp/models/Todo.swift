@@ -24,10 +24,7 @@ struct Todo: Hashable, Codable, Identifiable {
         CircleImage(image: imageName, size: 100.0)
     }
     
-    var category: Category
-    enum Category: String, CaseIterable, Codable {
-        case home = "Home"
-        case personal = "Personal"
-    }
-    
+    var category: TaskType = .home
+   
+
 }

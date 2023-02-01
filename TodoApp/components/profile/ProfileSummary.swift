@@ -23,7 +23,7 @@ struct ProfileSummary: View {
             }.padding(5)
             VStack(alignment: .center) {
                 Text("Priority Task: ").foregroundColor(Color.theme.white)
-                Text("\(profile.priorityTask.rawValue)")
+                Text("\(profile.priorityTask.icon)")
                     .frame(width: 200, height: 200)
                     .font(.custom("Very big", size: 90))
                     .background(Color.theme.secondary)

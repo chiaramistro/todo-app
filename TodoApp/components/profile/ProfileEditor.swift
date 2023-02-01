@@ -37,7 +37,7 @@ struct ProfileEditor: View {
                     Section {
                         Picker("Select task", selection: $profile.priorityTask) {
                             ForEach(TaskType.allCases, id: \.self) { task in
-                                Text(task.rawValue).tag(task)
+                                Text(task.icon).tag(task)
                             }
                         }.pickerStyle(.segmented)
                     } header: {

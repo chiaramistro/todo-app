@@ -18,20 +18,23 @@ struct Profile {
     static let `default` = Profile(username: "test_user")
 }
 
-enum TaskType: String, CaseIterable, Identifiable {
-    case home = "🏠"
-    case cleaning = "🧹"
-    case studying = "📚"
+enum TaskType: String, CaseIterable, Identifiable, Codable {
+    case home = "Home"
+    case cleaning = "Cleaning"
+    case studying = "Studying"
+    case personal = "Personal"
 
     var id: String { rawValue }
-    var typeString: String {
+    var icon: String {
         switch self {
         case .home:
-            return "Home"
+            return "🏠"
         case .cleaning:
-            return "Cleaning"
+            return "🧹"
         case .studying:
-            return "Studying"
+            return "📚"
+        case .personal:
+            return "🙋🏼‍♀️"
         }
     }
 }
