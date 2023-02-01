@@ -10,7 +10,7 @@ import SwiftUI
 struct SetTodoTimerModal: View {
     @Binding var showSetTimerModal: Bool
     @Binding var goToTimerView: Bool
-    @State private var timerData: TimerData = TimerData()
+    @Binding var timerData: TimerData
     @State private var newSubtask = ""
     
     var body: some View {
@@ -19,6 +19,7 @@ struct SetTodoTimerModal: View {
                 HStack() {
                     Spacer()
                     Button {
+                        self.goToTimerView = false
                         self.showSetTimerModal.toggle()
                     } label: {
                         Text("Dismiss").font(.headline).foregroundColor(Color.theme.primary)
@@ -63,13 +64,12 @@ struct SetTodoTimerModal: View {
                 Spacer()
                 
                 Button(action: {
+                    self.goToTimerView = true
                     // create new object and pass to another page
                     self.showSetTimerModal.toggle()
-                    self.goToTimerView.toggle()
                 }) {
                     Text("Submit").foregroundColor(Color.theme.primary).bold()
                 }.padding()
-                
                             
             }.background(Color.theme.secondary)
 
@@ -84,6 +84,6 @@ struct SetTodoTimerModal: View {
 
 struct SetTodoTimerModal_Previews: PreviewProvider {
     static var previews: some View {
-        SetTodoTimerModal(showSetTimerModal: .constant(true), goToTimerView: .constant(false))
+        SetTodoTimerModal(showSetTimerModal: .constant(true), goToTimerView: .constant(false), timerData: .constant(TimerData()))
     }
 }

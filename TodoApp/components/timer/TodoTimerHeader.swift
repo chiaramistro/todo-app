@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct TodoTimerHeader: View {
-    let secondsElapsed: Int = 300
-    let secondsRemaining: Int = 600
+    let secondsElapsed: Int
+    let secondsRemaining: Int
     
     private var totalSeconds: Int {
         secondsElapsed + secondsRemaining
@@ -48,6 +48,6 @@ struct TodoTimerHeader: View {
 
 struct TodoTimerHeader_Previews: PreviewProvider {
     static var previews: some View {
-        TodoTimerHeader().background(Color.theme.secondary).padding()
+        TodoTimerHeader(secondsElapsed: 200, secondsRemaining: 500).background(Color.theme.secondary).padding()
     }
 }

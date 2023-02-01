@@ -15,7 +15,8 @@ struct TodoDetailsView: View {
     @State private var showDescription = false
     @State private var showSetTimerModal = false
     @State private var goToTimerView = false
-
+    @State private var timerData: TimerData = TimerData()
+    
     var todoIndex: Int {
         modelData.todos.firstIndex(where: { $0.id == todo.id })!
     }
@@ -61,13 +62,17 @@ struct TodoDetailsView: View {
                 }.padding(10).background(Color.theme.primary).cornerRadius(15)
             }
             
+            NavigationLink(destination: TodoTimerView(timerData: timerData), isActive: $goToTimerView) {
+                EmptyView() // showing nothing for now
+            }
+            
         }.navigationBarItems(trailing: Button(action: deleteTodo) {
             Image(systemName: "trash")
         }.foregroundColor(Color.theme.white))
         .navigationTitle("Details")
         .background(Color.theme.darkGreen)
         .sheet(isPresented: $showSetTimerModal) {
-            SetTodoTimerModal(showSetTimerModal: $showSetTimerModal, goToTimerView: $goToTimerView)
+            SetTodoTimerModal(showSetTimerModal: $showSetTimerModal, goToTimerView: $goToTimerView, timerData: $timerData)
             //                    define height of filter modal
             //                .presentationDetents([.height(200)])
         }
