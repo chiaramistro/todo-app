@@ -19,6 +19,7 @@
 		E947E5A02988147E00BAC9BC /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947E59F2988147E00BAC9BC /* TrailingIconLabelStyle.swift */; };
 		E947E5A22988228400BAC9BC /* TimerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E947E5A12988228400BAC9BC /* TimerData.swift */; };
 		E967519529892ADF007D567B /* SetTodoTimerModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E967519429892ADF007D567B /* SetTodoTimerModal.swift */; };
+		E967519A29897C0B007D567B /* TodoTimerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E967519929897C0B007D567B /* TodoTimerHeader.swift */; };
 		E97155B02982E62900BC1718 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97155AF2982E62900BC1718 /* Color.swift */; };
 		E9C369D2297FD31C00C2282A /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C369D1297FD31C00C2282A /* HexagonParameters.swift */; };
 		E9C369D4297FD45D00C2282A /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C369D3297FD45D00C2282A /* BadgeBackground.swift */; };
@@ -78,6 +79,7 @@
 		E947E59F2988147E00BAC9BC /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		E947E5A12988228400BAC9BC /* TimerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerData.swift; sourceTree = "<group>"; };
 		E967519429892ADF007D567B /* SetTodoTimerModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTodoTimerModal.swift; sourceTree = "<group>"; };
+		E967519929897C0B007D567B /* TodoTimerHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTimerHeader.swift; sourceTree = "<group>"; };
 		E97155AF2982E62900BC1718 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		E9C369D1297FD31C00C2282A /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 		E9C369D3297FD45D00C2282A /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
@@ -216,6 +218,14 @@
 			path = todos;
 			sourceTree = "<group>";
 		};
+		E967519B29897C0F007D567B /* timer */ = {
+			isa = PBXGroup;
+			children = (
+				E967519929897C0B007D567B /* TodoTimerHeader.swift */,
+			);
+			path = timer;
+			sourceTree = "<group>";
+		};
 		E97155AC29829AB100BC1718 /* common */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +298,7 @@
 		E9C7BE22297E863D00C48C8B /* components */ = {
 			isa = PBXGroup;
 			children = (
+				E967519B29897C0F007D567B /* timer */,
 				E967519829895B72007D567B /* todos */,
 				E97155AC29829AB100BC1718 /* common */,
 				E9C369EE29801F7A00C2282A /* category */,
@@ -472,6 +483,7 @@
 				E9C7BE34297EE53A00C48C8B /* CheckButton.swift in Sources */,
 				E9C369D9297FD8CC00C2282A /* TodoStatistic.swift in Sources */,
 				E947E5A02988147E00BAC9BC /* TrailingIconLabelStyle.swift in Sources */,
+				E967519A29897C0B007D567B /* TodoTimerHeader.swift in Sources */,
 				E9C369F02980288F00C2282A /* ProfileEditor.swift in Sources */,
 				E9C7BE30297EA7FC00C48C8B /* TodoItem.swift in Sources */,
 				E9C369E829801D9F00C2282A /* ProfileView.swift in Sources */,
