@@ -15,6 +15,15 @@ final class ModelData: ObservableObject {
     
     @Published var todos: [Todo] = load("todoData.json")
     
+    // Functions to manage todo list
+    func addNewTodo(newTodo: Todo) {
+        todos.append(newTodo)
+    }
+    
+    func deleteTodo(todoIndex: Int) {
+        todos.remove(at: todoIndex)
+    }
+    
 //    you’ll never modify hike data after initially loading it, you don’t need to mark it with the @Published attribute.
     var todoStatistics: [TodoStatistic] = load("todoStatistics.json")
     
@@ -27,14 +36,7 @@ final class ModelData: ObservableObject {
     }
     
     @Published var profile = Profile.default
-    
-    func addNewTodo(newTodo: Todo) {
-        todos.append(newTodo)
-    }
-    
-    func deleteTodo(todoIndex: Int) {
-        todos.remove(at: todoIndex)
-    }
+
 }
 
 // create an array initialized with todos from a file

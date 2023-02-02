@@ -11,6 +11,7 @@ struct TodoDetailsView: View {
     //    @EnvironmentObject var todo: Todo
     var todo: Todo
     
+    // https://developer.apple.com/forums/thread/660481
     @Environment(\.presentationMode) var presentationMode
     
     @EnvironmentObject var modelData: ModelData
