@@ -11,12 +11,12 @@ import Foundation
 //Decodable: to read data from file
 //Identifiable: id property required
 struct Todo: Hashable, Codable, Identifiable {
-    var id: Int
-    var name: String
-    var description: String
-    var completed: Bool
+    var id: String = "0"
+    var name: String = ""
+    var description: String = ""
+    var completed: Bool = false
     
-    private var imageName: String // read image from data (private since we use the Image to render it, we are not interested about name)
+    var imageName: String = "" // read image from data (private since we use the Image to render it, we are not interested about name)
     var imageDetail: CircleImage { // loads from assets
         CircleImage(image: imageName, size: 200.0)
     }

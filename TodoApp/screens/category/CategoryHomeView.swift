@@ -11,6 +11,8 @@ struct CategoryHomeView: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showAddNewTodo = false
     
+    @State private var newTodoData = Todo()
+    
     var body: some View {
         NavigationStack {
             List {
@@ -34,7 +36,25 @@ struct CategoryHomeView: View {
                 }
                     .foregroundColor(Color.theme.white))
                 .sheet(isPresented: $showAddNewTodo) {
-                    AddTodoView(showAddNewTodoModal: $showAddNewTodo)
+                    NavigationView {
+                        AddTodoView(
+                            newTodoData: $newTodoData,
+                            showAddNewTodoModal: $showAddNewTodo)
+                        .toolbar {
+                            ToolbarItem(placement: .cancellationAction) {
+                                Button("Cancel") {
+                                    showAddNewTodo = false
+                                }.foregroundColor(Color.theme.white)
+                            }
+                            ToolbarItem(placement: .confirmationAction) {
+                                Button("Done") {
+                                    newTodoData.id = UUID().uuidString // generate unique id
+                                    modelData.addNewTodo(newTodo: newTodoData)
+                                    showAddNewTodo = false
+                                }.foregroundColor(Color.theme.primary)
+                            }
+                        }
+                    }
                 }
                 .background(Color.theme.darkGreen)
         }

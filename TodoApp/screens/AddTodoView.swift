@@ -8,12 +8,9 @@
 import SwiftUI
 
 struct AddTodoView: View {
-    @State private var tapCount = 0
-    @State private var name: String = "My next todo..."
-    @State private var description: String = "My next todo will be..."
-    @State private var imageName: String = ""
-    @State private var priorityTask = TaskType.home // default
-    @State private var status: Bool = true
+//    @State private var tapCount = 0
+    @Binding var newTodoData: Todo
+    
     @Binding var showAddNewTodoModal: Bool
     
     var body: some View {
@@ -22,38 +19,38 @@ struct AddTodoView: View {
             
             Form {
                 Section {
-                    TextField("Enter todo", text: $name)
+                    TextField("Enter todo", text: $newTodoData.name)
                 } header: {
                     Text("Next todo").foregroundColor(Color.theme.white)
                 }
                 
                 Section {
-                    TextEditor(text: $description)
+                    TextEditor(text: $newTodoData.description)
                 } header: {
                     Text("Description").foregroundColor(Color.theme.white)
                 }
                 
                 Section {
-                    TextField("Enter name", text: $imageName)
+                    TextField("Enter name", text: $newTodoData.imageName)
                 } header: {
                     Text("Image").foregroundColor(Color.theme.white)
                 }
                 
                 Section {
                     VStack(alignment: .center) {
-                        Picker("Select task", selection: $priorityTask) {
+                        Picker("Select task", selection: $newTodoData.category) {
                             ForEach(TaskType.allCases, id: \.self) { task in
-                                Text(task.rawValue).tag(task)
+                                Text(task.icon).tag(task)
                             }
                         }.pickerStyle(.segmented)
-                        Text(priorityTask.typeString.uppercased()).foregroundColor(.black).tracking(10).bold().padding([.top, .bottom], 5)
+                        Text(newTodoData.category.id.uppercased()).foregroundColor(.black).tracking(10).bold().padding([.top, .bottom], 5)
                     }
                 } header: {
                     Text("Select your priority task").foregroundColor(Color.theme.white)
                 }
                 
                 Section {
-                    Toggle(isOn: $status) {
+                    Toggle(isOn: $newTodoData.completed) {
                         Text("\(getCurrentStatus())")
                     }.tint(Color.theme.primary)
                 } header: {
@@ -86,12 +83,14 @@ struct AddTodoView: View {
     }
     
     func getCurrentStatus() -> String {
-        return status ? "Completed" : "To do"
+        return newTodoData.completed ? "Completed" : "To do"
     }
 }
 
 struct AddTodoView_Previews: PreviewProvider {
+    static let modelData = ModelData()
+    
     static var previews: some View {
-        AddTodoView(showAddNewTodoModal: .constant(true))
+        AddTodoView(newTodoData: .constant(modelData.todos[0]), showAddNewTodoModal: .constant(true))
     }
 }

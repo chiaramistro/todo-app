@@ -27,6 +27,10 @@ final class ModelData: ObservableObject {
     }
     
     @Published var profile = Profile.default
+    
+    func addNewTodo(newTodo: Todo) {
+        todos.append(newTodo)
+    }
 }
 
 // create an array initialized with todos from a file

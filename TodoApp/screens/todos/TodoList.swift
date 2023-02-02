@@ -21,6 +21,8 @@ struct TodoList: View {
     @State private var showAddNewTodo = false
     @State private var showFiltersModal = false
     
+    @State private var newTodoData = Todo()
+    
     var filteredTodos: [Todo] {
         modelData.todos.filter { todo in
             (!showCompletedOnly || todo.completed)
@@ -122,17 +124,21 @@ struct TodoList: View {
                 .navigationBarTitle("List", displayMode: .inline)
                 .sheet(isPresented: $showAddNewTodo) {
                     NavigationView {
-                        AddTodoView(showAddNewTodoModal: $showAddNewTodo)
-                    }
-                    .toolbar {
-                        ToolbarItem(placement: .cancellationAction) {
-                            Button("Cancel") {
-                                showAddNewTodo = false
+                        AddTodoView(
+                            newTodoData: $newTodoData,
+                            showAddNewTodoModal: $showAddNewTodo)
+                        .toolbar {
+                            ToolbarItem(placement: .cancellationAction) {
+                                Button("Cancel") {
+                                    showAddNewTodo = false
+                                }.foregroundColor(Color.theme.white)
                             }
-                        }
-                        ToolbarItem(placement: .confirmationAction) {
-                            Button("Done") {
-                                showAddNewTodo = false
+                            ToolbarItem(placement: .confirmationAction) {
+                                Button("Done") {
+                                    newTodoData.id = UUID().uuidString // generate unique id
+                                    modelData.addNewTodo(newTodo: newTodoData)
+                                    showAddNewTodo = false
+                                }.foregroundColor(Color.theme.primary)
                             }
                         }
                     }
