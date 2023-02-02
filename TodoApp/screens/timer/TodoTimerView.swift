@@ -14,6 +14,7 @@ struct TodoTimerView: View {
     
 //     Wrapping a reference type property as a @StateObject keeps the object alive for the life cycle of a view.
     @StateObject var timerManager = TimerManager()
+    @State var isTimerOn: Bool = true
     
 //    private var player: AVPlayer { AVPlayer.sharedDingPlayer }
     
@@ -23,19 +24,37 @@ struct TodoTimerView: View {
                 .fill(.yellow).padding()
             VStack {
                 TodoTimerHeader(secondsElapsed: timerManager.secondsElapsed, secondsRemaining: timerManager.secondsRemaining)
-                Circle()
-                    .strokeBorder(lineWidth: 24)
-                    .foregroundColor(Color.theme.white)
+                
+                Button(action: {
+                    if isTimerOn {
+                        timerManager.pauseTimer()
+                    } else {
+                        timerManager.resumeTimer(secondsElapsed: timerManager.secondsElapsed, secondsRemaining: timerManager.secondsRemaining)
+                    }
+                    isTimerOn.toggle()
+                }) {
+                    Image(systemName: isTimerOn ? "pause.circle.fill" : "play.circle.fill")
+                        .font(.largeTitle)
+                }.foregroundColor(Color.theme.white)
+                    .padding()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                    .overlay(
+                        Circle()
+                            .strokeBorder(lineWidth: 24)
+                            .foregroundColor(Color.theme.white)
+                            .padding(6)
+                        
+                    )
                 Text("\(timerData.todoName)").foregroundColor(Color.theme.white).bold()
             }.padding(32)
         }.background(Color.theme.secondary)
-        .onAppear {
-            timerManager.reset(lengthInMinutes: timerData.lengthInMinutes)
-            timerManager.startTimer()
-         }.onDisappear {
-             timerManager.stopTimer()
-         }
-
+            .onAppear {
+                timerManager.reset(lengthInMinutes: timerData.lengthInMinutes, todoName: timerData.todoName)
+                timerManager.startTimer()
+            }.onDisappear {
+                timerManager.stopTimer()
+            }
+        
     }
 }
 

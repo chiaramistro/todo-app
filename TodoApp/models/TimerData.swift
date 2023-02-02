@@ -26,7 +26,7 @@ class TimerManager: ObservableObject {
     
         private var timer: Timer?
         private var timerStopped = false
-        private var frequency: TimeInterval { 1.0 / 60.0 }
+        // private var frequency: TimeInterval { 1.0 / 60.0 }
     
         init(lengthInMinutes: Double = 0.0, todoName: String = "") {
             self.todoName = todoName
@@ -49,14 +49,28 @@ class TimerManager: ObservableObject {
             timerStopped = true
         }
 
-        func startTimer() {
+        func startTimer(secondsAlreadyElapsed: Int = 0) {
             print("startTimer()")
             let startDate = Date()
             timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-                self.secondsElapsed = Int(Date().timeIntervalSince1970 - startDate.timeIntervalSince1970)
+                self.secondsElapsed = secondsAlreadyElapsed + Int(Date().timeIntervalSince1970 - startDate.timeIntervalSince1970)
                 print("startTimer() secondsElapsed \(self.secondsElapsed)")
                 self.updateTimer()
             }
+        }
+    
+        func pauseTimer() {
+            print("pauseTimer()")
+            timer?.invalidate()
+            timer = nil
+            timerStopped = true
+        }
+    
+        func resumeTimer(secondsElapsed: Int, secondsRemaining: Int) {
+            print("resumeTimer()")
+            timerStopped = false
+            self.secondsRemaining = secondsRemaining
+            self.startTimer(secondsAlreadyElapsed: secondsElapsed)
         }
     
         private func updateTimer() {
