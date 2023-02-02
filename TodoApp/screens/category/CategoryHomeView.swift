@@ -44,6 +44,7 @@ struct CategoryHomeView: View {
                             ToolbarItem(placement: .cancellationAction) {
                                 Button("Cancel") {
                                     showAddNewTodo = false
+                                    newTodoData = Todo() // reset
                                 }.foregroundColor(Color.theme.white)
                             }
                             ToolbarItem(placement: .confirmationAction) {
@@ -51,6 +52,7 @@ struct CategoryHomeView: View {
                                     newTodoData.id = UUID().uuidString // generate unique id
                                     modelData.addNewTodo(newTodo: newTodoData)
                                     showAddNewTodo = false
+                                    newTodoData = Todo() // reset
                                 }.foregroundColor(Color.theme.primary)
                             }
                         }

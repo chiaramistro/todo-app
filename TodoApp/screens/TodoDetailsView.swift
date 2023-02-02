@@ -59,6 +59,7 @@ struct TodoDetailsView: View {
             
             VStack(alignment: .center) {
                 Button(action: {
+                    timerData = TimerData() // reset
                     self.showSetTimerModal.toggle()
                 }) {
                     Text("Start timer").foregroundColor(Color.theme.white).bold().font(.headline)
