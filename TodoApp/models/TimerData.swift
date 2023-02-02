@@ -8,7 +8,6 @@
 import Foundation
 
 struct TimerData {
-//    var motivationalQuote: String = ""
     var lengthInMinutes: Double = 5
     var subtasksToRemember: [String] = []
 }

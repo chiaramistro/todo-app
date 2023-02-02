@@ -64,7 +64,7 @@ struct TodoDetailsView: View {
                 }.padding(10).background(Color.theme.primary).cornerRadius(15)
             }
             
-            NavigationLink(destination: TodoTimerView(timerData: timerData), isActive: $goToTimerView) {
+            NavigationLink(destination: TodoTimerView(todoTitle: modelData.todos[todoIndex].name, timerData: timerData), isActive: $goToTimerView) {
                 EmptyView() // showing nothing for now
             }
             
