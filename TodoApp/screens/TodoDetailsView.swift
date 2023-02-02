@@ -11,6 +11,8 @@ struct TodoDetailsView: View {
     //    @EnvironmentObject var todo: Todo
     var todo: Todo
     
+    @Environment(\.presentationMode) var presentationMode
+    
     @EnvironmentObject var modelData: ModelData
     @State private var showDescription = false
     @State private var showSetTimerModal = false
@@ -80,7 +82,8 @@ struct TodoDetailsView: View {
     }
     
     func deleteTodo() {
-        print("deleteTodo Button Clicked")
+        modelData.deleteTodo(todoIndex: todoIndex)
+        self.presentationMode.wrappedValue.dismiss()
     }
     
     //    func computeStatus(Bool completed) {

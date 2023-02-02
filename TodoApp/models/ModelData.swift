@@ -31,6 +31,10 @@ final class ModelData: ObservableObject {
     func addNewTodo(newTodo: Todo) {
         todos.append(newTodo)
     }
+    
+    func deleteTodo(todoIndex: Int) {
+        todos.remove(at: todoIndex)
+    }
 }
 
 // create an array initialized with todos from a file
