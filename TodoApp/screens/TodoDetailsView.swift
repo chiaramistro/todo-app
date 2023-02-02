@@ -75,9 +75,25 @@ struct TodoDetailsView: View {
         .navigationTitle("Details")
         .background(Color.theme.darkGreen)
         .sheet(isPresented: $showSetTimerModal) {
-            SetTodoTimerModal(showSetTimerModal: $showSetTimerModal, goToTimerView: $goToTimerView, timerData: $timerData)
-            //                    define height of filter modal
-            //                .presentationDetents([.height(200)])
+            NavigationView {
+                SetTodoTimerModal(showSetTimerModal: $showSetTimerModal, goToTimerView: $goToTimerView, timerData: $timerData)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Cancel") {
+                                showSetTimerModal = false
+                                goToTimerView = false
+                            }.foregroundColor(Color.theme.white)
+                        }
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Done") {
+                                showSetTimerModal = false
+                                goToTimerView = true
+                            }.foregroundColor(Color.theme.primary)
+                        }
+                    }
+            }
+            .presentationDetents([.height(400)]) //                    define height of filter modal
+            
         }
         
     }

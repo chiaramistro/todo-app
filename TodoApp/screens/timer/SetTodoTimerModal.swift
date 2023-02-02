@@ -16,16 +16,15 @@ struct SetTodoTimerModal: View {
     var body: some View {
         NavigationStack {
             VStack(alignment: .center) {
-                HStack() {
-                    Spacer()
-                    Button {
-                        self.goToTimerView = false
-                        self.showSetTimerModal.toggle()
-                    } label: {
-                        Text("Dismiss").font(.headline).foregroundColor(Color.theme.primary)
-                    }.padding()
-                }
-                
+//                HStack() {
+//                    Spacer()
+//                    Button {
+//                        self.goToTimerView = false
+//                        self.showSetTimerModal.toggle()
+//                    } label: {
+//                        Text("Dismiss").font(.headline).foregroundColor(Color.theme.primary)
+//                    }.padding()
+//                }
                 Form {
                     Section(
                         header: Text("Set a timer for your todo")
@@ -61,15 +60,15 @@ struct SetTodoTimerModal: View {
                     }
                 }.scrollContentBackground(.hidden)
                 
-                Spacer()
-                
-                Button(action: {
-                    self.goToTimerView = true
-                    // create new object and pass to another page
-                    self.showSetTimerModal.toggle()
-                }) {
-                    Text("Submit").foregroundColor(Color.theme.primary).bold()
-                }.padding()
+//                Spacer()
+//
+//                Button(action: {
+//                    self.goToTimerView = true
+//                    // create new object and pass to another page
+//                    self.showSetTimerModal.toggle()
+//                }) {
+//                    Text("Submit").foregroundColor(Color.theme.primary).bold()
+//                }.padding()
                             
             }.background(Color.theme.secondary)
 
