@@ -59,14 +59,14 @@ struct TodoDetailsView: View {
             
             VStack(alignment: .center) {
                 Button(action: {
-                    timerData = TimerData() // reset
+                    timerData = TimerData(todoName: modelData.todos[todoIndex].name) // reset
                     self.showSetTimerModal.toggle()
                 }) {
                     Text("Start timer").foregroundColor(Color.theme.white).bold().font(.headline)
                 }.padding(10).background(Color.theme.primary).cornerRadius(15)
             }
             
-            NavigationLink(destination: TodoTimerView(todoTitle: modelData.todos[todoIndex].name, timerData: timerData), isActive: $goToTimerView) {
+            NavigationLink(destination: TodoTimerView(timerData: timerData), isActive: $goToTimerView) {
                 EmptyView() // showing nothing for now
             }
             

@@ -8,12 +8,14 @@
 import Foundation
 
 struct TimerData {
+    var todoName: String = ""
     var lengthInMinutes: Double = 5
     var subtasksToRemember: [String] = []
 }
 
 class TimerManager: ObservableObject {
     
+        private(set) var todoName: String
         private(set) var lengthInMinutes: Int
     
         private var lengthInSeconds: Int { lengthInMinutes * 60 }
@@ -26,13 +28,15 @@ class TimerManager: ObservableObject {
         private var timerStopped = false
         private var frequency: TimeInterval { 1.0 / 60.0 }
     
-        init(lengthInMinutes: Double = 0.0) {
+        init(lengthInMinutes: Double = 0.0, todoName: String = "") {
+            self.todoName = todoName
             self.lengthInMinutes = Int(lengthInMinutes)
             secondsRemaining = lengthInSeconds
             secondsElapsed = 0
         }
     
-        func reset(lengthInMinutes: Double) {
+        func reset(lengthInMinutes: Double, todoName: String) {
+            self.todoName = todoName
             self.lengthInMinutes = Int(lengthInMinutes)
             secondsRemaining = lengthInSeconds
             secondsElapsed = 0

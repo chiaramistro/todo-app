@@ -10,7 +10,6 @@ import SwiftUI
 import AVFoundation
 
 struct TodoTimerView: View {
-    var todoTitle: String
     @State var timerData: TimerData
     
 //     Wrapping a reference type property as a @StateObject keeps the object alive for the life cycle of a view.
@@ -27,7 +26,7 @@ struct TodoTimerView: View {
                 Circle()
                     .strokeBorder(lineWidth: 24)
                     .foregroundColor(Color.theme.white)
-                Text("\(todoTitle)").foregroundColor(Color.theme.white).bold()
+                Text("\(timerData.todoName)").foregroundColor(Color.theme.white).bold()
             }.padding(32)
         }.background(Color.theme.secondary)
         .onAppear {
@@ -42,6 +41,6 @@ struct TodoTimerView: View {
 
 struct TodoTimerView_Previews: PreviewProvider {
     static var previews: some View {
-        TodoTimerView(todoTitle: "Example todo", timerData: TimerData())
+        TodoTimerView(timerData: TimerData(todoName: "My todo"))
     }
 }
